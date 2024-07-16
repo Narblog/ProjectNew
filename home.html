@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script defer src="./script-home.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./style.css"/>
-  </head>
-  <body>
-   
+
+<head>
+  <script defer src="./script-home.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <div class="container" >
 
     <div class="logout">
       <p id="isLogged_userName"></p>
       <button id="LogOutBtn">Log Out</button>
     </div>
-<div class="box">
-  <table border="1px solid black">
-    <thead>
-      <tr>
-        <th></th>
-        <th>InvoiceName</th>
-        <th>Paid Date</th>
-        <th>Total Amount</th>
-      </tr>
-    </thead>
-  <tbody id="myBody">
-
-  </tbody>
-
-  </table>
-
-  <table border="" id="service_lines">
-    <thead>
-      <tr>
-        <th>Product</th>
-        <th>Price</th>
-        <th>Quatity</th>
-        <th>Total Amout</th>
-      </tr>
-    </thead>
-    <tbody id="service_lines_body">
-
-    </tbody>
-
-  </table>
-</div>
     
+    <div class="box">
+      <table border="1px solid black" class="OneTable">
+        <thead>
+          <tr>
+            <th class="datark"></th>
+            <th >InvoiceName</th>
+            <th>Paid Date</th>
+            <th>Total Amount</th>
+          </tr>
+        </thead>
+        <tbody id="myBody">
 
-    
-  </body>
+        </tbody>
+
+      </table>
+
+      <table border="" id="service_lines" class="service_line">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Amount</th>
+          </tr>
+        </thead>
+        <tbody id="service_lines_body">
+
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+</body>
+
 </html>
