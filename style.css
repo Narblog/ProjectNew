@@ -1,3 +1,10 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 .formclass{
     width:100%;
     height: 100vh;
@@ -71,3 +78,45 @@ input{
     border:1px solid #daf8c6
 }
 
+
+td{
+    text-align: center;
+}
+
+.logout{
+    width: 10%;
+    height: 10vh;
+    background-color: red;
+   
+    position: absolute;
+    top: 142px;
+    right: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#service_lines{
+    display: block;
+    width:595px;
+    flex-direction: column;
+    color:red;
+  
+}
+#service_lines td{
+    width:150px;
+}
+#service_lines th{
+    width:150px;
+}
+.box{
+    max-width: 650px;
+    margin:50px auto;
+    padding:20px;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0 , 0, 0, 0.1); 
+}
+thead{
+    text-align: center;
+}
